@@ -1,6 +1,8 @@
-# Books
+# Books and Sample Code
 
-A curated collection of code, notes, and learning material for Linux shell scripting, Windows C programming, and malware analysis.
+This repository accompanies the books I am writing and contains sample code from them. I am making these examples publicly available so people around the world can review the code, suggest corrections, and give me feedback that will help improve both the examples and the books.
+
+I have been working on these books for several months and update them whenever I have free time. I may also create videos explaining some of the examples if time permits. Feedback and contributions are always welcome. Thank you! :)
 
 ## Repository sections
 
