@@ -10,6 +10,7 @@ A curated collection of code, notes, and learning material for Linux shell scrip
 | [Windows C Programming](./Windows%20C%20Programming/) | C programs, Windows API examples, and related documentation. |
 | [Malware Analysis](./Malware%20Analysis/) | Defensive malware-analysis code, reports, notes, and lab documentation. |
 | [Assembly](./Assembly/) | Windows 11 x86 inline-assembly examples that compile with MSVC `cl`. |
+| [Shell Code Windows](./Shell%20Code%20Windows/) | Safe local-only Windows x86 machine-code examples with C harnesses. |
 
 ## Contributing content
 
