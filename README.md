@@ -9,6 +9,7 @@ A curated collection of code, notes, and learning material for Linux shell scrip
 | [Linux Shell Scripts](./Linux%20Shell%20Scripts/) | Bash and other Linux shell scripts, examples, and notes. |
 | [Windows C Programming](./Windows%20C%20Programming/) | C programs, Windows API examples, and related documentation. |
 | [Malware Analysis](./Malware%20Analysis/) | Defensive malware-analysis code, reports, notes, and lab documentation. |
+| [Assembly](./Assembly/) | Windows 11 x86 inline-assembly examples that compile with MSVC `cl`. |
 
 ## Contributing content
 
