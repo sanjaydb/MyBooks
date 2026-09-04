@@ -12,6 +12,7 @@ A curated collection of code, notes, and learning material for Linux shell scrip
 | [Assembly](./Assembly/) | Windows 11 x86 inline-assembly examples that compile with MSVC `cl`. |
 | [Shell Code Windows](./Shell%20Code%20Windows/) | Safe local-only Windows x86 machine-code examples with C harnesses. |
 | [Shell Code Linux](./Shell%20Code%20Linux/) | Safe local-only Linux x86-64 machine-code examples with C harnesses. |
+| [Windows Stack Overflow](./Windows%20Stack%20Overflow/) | Defensive Windows C examples for understanding and preventing stack-buffer errors. |
 
 ## Contributing content
 
