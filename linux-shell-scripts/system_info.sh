@@ -4,6 +4,7 @@ set -euo pipefail
 [[ "${1:-}" == "--help" ]] && { echo "Usage: $0  # Show system health information"; exit 0; }
 
 echo "Hostname:         $(hostname)"
+# shellcheck disable=SC1091
 echo "Operating system: $(. /etc/os-release 2>/dev/null && echo "${PRETTY_NAME:-Unknown}" || echo "Unknown")"
 echo "Kernel:           $(uname -r)"
 echo "Architecture:     $(uname -m)"
