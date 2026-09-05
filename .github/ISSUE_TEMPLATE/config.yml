@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security or privacy report
+    url: https://github.com/sanjaydb/MyBooks/security/advisories/new
+    about: Use a private report for credentials, personal data, confidential material, or unsafe behavior.

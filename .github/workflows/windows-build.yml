@@ -1,0 +1,25 @@
+name: Windows builds
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  msvc-x64:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - name: Compile x64 examples
+        shell: pwsh
+        run: ./tools/build-windows.ps1
+  msvc-x86:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x86
+      - name: Compile x86 examples
+        shell: pwsh
+        run: ./tools/build-windows-x86.ps1

@@ -1,0 +1,6 @@
+*.c text eol=crlf
+*.h text eol=crlf
+*.sh text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

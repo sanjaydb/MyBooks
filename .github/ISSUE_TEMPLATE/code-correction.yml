@@ -1,0 +1,29 @@
+name: Code correction
+description: Report an error or propose a safer or clearer example.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: path
+    attributes:
+      label: File or section
+      placeholder: windows-c-programming/socket-utilities/example.c
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect?
+      description: Explain the current and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Test environment
+      placeholder: Windows 11, Visual Studio 2022, x64
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested correction
+      description: Provide a patch or explanation if available. Do not attach binaries or sensitive data.

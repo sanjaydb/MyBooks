@@ -1,0 +1,22 @@
+name: Linux checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  shell-and-c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Check Bash syntax
+        run: find linux-shell-scripts -name '*.sh' -print0 | xargs -0 -n1 bash -n
+      - name: Run ShellCheck
+        run: find linux-shell-scripts -name '*.sh' -print0 | xargs -0 shellcheck
+      - name: Compile Linux C examples
+        run: |
+          mkdir -p /tmp/mybooks-linux-build
+          while IFS= read -r -d '' source; do
+            name="$(printf '%s' "$source" | tr '/ ' '__')"
+            gcc -std=c11 -Wall -Wextra -Wpedantic "$source" -o "/tmp/mybooks-linux-build/$name"
+          done < <(find shellcode-linux -name '*.c' -print0)

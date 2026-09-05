@@ -1,0 +1,19 @@
+name: Repository safety
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  prohibited-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject unsafe committed file types
+        shell: bash
+        run: |
+          set -euo pipefail
+          pattern='\.(exe|dll|sys|obj|lib|pdb|zip|7z|rar|tar|gz|iso|img|bin|dmp|pcap|pcapng|pem|key|pfx|p12)$'
+          matches="$(git ls-files | grep -Ei "$pattern" || true)"
+          if [[ -n "$matches" ]]; then
+            printf 'Prohibited files found:\n%s\n' "$matches"
+            exit 1
+          fi

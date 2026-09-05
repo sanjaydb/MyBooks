@@ -1,0 +1,18 @@
+name: Documentation feedback
+description: Suggest a correction or improvement to the books' companion notes.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or file
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Describe the unclear or incorrect text and your proposed improvement.
+    validations:
+      required: true
