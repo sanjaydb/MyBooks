@@ -1,7 +1,8 @@
 # MyBooks: Companion Sample Code
 
-[![Windows builds](https://github.com/sanjaydb/MyBooks/actions/workflows/windows-build.yml/badge.svg)](https://github.com/sanjaydb/MyBooks/actions/workflows/windows-build.yml)
-[![Linux checks](https://github.com/sanjaydb/MyBooks/actions/workflows/linux-checks.yml/badge.svg)](https://github.com/sanjaydb/MyBooks/actions/workflows/linux-checks.yml)
+[![Windows builds](https://github.com/sanjaydb/MyBooks/actions/workflows/windows-build.yml/badge.svg?branch=main)](https://github.com/sanjaydb/MyBooks/actions/workflows/windows-build.yml)
+[![Linux checks](https://github.com/sanjaydb/MyBooks/actions/workflows/linux-checks.yml/badge.svg?branch=main)](https://github.com/sanjaydb/MyBooks/actions/workflows/linux-checks.yml)
+[![Repository safety](https://github.com/sanjaydb/MyBooks/actions/workflows/repository-safety.yml/badge.svg?branch=main)](https://github.com/sanjaydb/MyBooks/actions/workflows/repository-safety.yml)
 [![License: CC0-1.0 OR MIT](https://img.shields.io/badge/license-CC0--1.0%20OR%20MIT-blue.svg)](LICENSE.md)
 
 I am writing practical books about Linux and Windows systems programming, assembly language, reverse engineering, and defensive malware analysis. This repository contains sample code from those books.
